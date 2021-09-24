@@ -21,7 +21,10 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
-            <img className={styles.card} src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.careerexperts.co.uk%2Fwp-content%2Fuploads%2F2017%2F07%2FMotivational-quotes-for-work-1-min.jpg&f=1&nofb=1" />
+            <div className={styles.card}>
+                <img style={{"width": "100%"}} src={"/mika-baumeister-Y_LgXwQEx2c-unsplash.jpg"} />
+                Photo by <a href="https://unsplash.com/@mbaumi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mika Baumeister</a> on <a href="https://unsplash.com/s/photos/motivation?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </div>
         </div>
 
         <div className={styles.description}>
