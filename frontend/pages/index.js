@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
+import SubscriptionForm from './forms/SubscriptionForm'
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -27,8 +29,7 @@ export default function Home() {
         </div>
 
         <div className={styles.description}>
-            <input type="email" placeholder={"Enter email"} />
-            <button>Subscribe!</button>
+            <SubscriptionForm />
         </div>
       </main>
 
