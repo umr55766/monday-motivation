@@ -1,2 +1,2 @@
 def app(event):
-    return "Hello, world!"
+    return "Hello, Monday motivation!"
