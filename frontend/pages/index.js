@@ -22,7 +22,7 @@ export default function Home() {
 
         <div className={styles.grid}>
             <div className={styles.card}>
-                <img style={{"width": "100%"}} src={"/mika-baumeister-Y_LgXwQEx2c-unsplash.jpg"} />
+                <Image style={{"width": "100%"}} src={"/mika-baumeister-Y_LgXwQEx2c-unsplash.jpg"} />
                 Photo by <a href="https://unsplash.com/@mbaumi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mika Baumeister</a> on <a href="https://unsplash.com/s/photos/motivation?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
             </div>
         </div>
