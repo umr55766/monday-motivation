@@ -2,6 +2,7 @@
 
 # backend
 backend/.deta
+backend/.env
 
 # dependencies
 frontend/node_modules
