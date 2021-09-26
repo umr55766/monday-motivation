@@ -1,7 +1,15 @@
 
 export default function SubscriptionForm() {
+
+    function setIsSubscribing(isSubscribing) {
+        document.getElementById("subscribeButton").setAttribute("disabled", isSubscribing);
+        document.getElementById("subscribeButton").innerHTML = (isSubscribing ? 'Subscribing..' : 'Subscribe!');
+    }
+
     const subscribeUser = async event => {
-        event.preventDefault()
+        event.preventDefault();
+
+        setIsSubscribing(true);
 
         const response = await fetch('/api/subscribe', {
             body: JSON.stringify({
@@ -14,13 +22,14 @@ export default function SubscriptionForm() {
         });
 
         window.location.href = (response.status === 201) ? `/success` : `/failure`;
+        setIsSubscribing(false);
     };
 
     return (
         <form onSubmit={subscribeUser}>
             <label htmlFor="email">Email:</label>
             <input id="email" name="email" type="text" autoComplete="email" required />
-            <button type="submit">Subscribe!</button>
+            <button id="subscribeButton" type="submit">Subscribe!</button>
         </form>
     )
 }
